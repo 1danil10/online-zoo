@@ -35,7 +35,7 @@ const path = {
   src: {
     html: [
       sourceFolder + "/**/*.html",
-      "!" + sourceFolder + "/partials/*.html",
+      "!" + sourceFolder + "/partials/**/*.html",
     ],
     css: sourceFolder + "/css/**.*css",
     scss: sourceFolder + "/scss/style.scss",
@@ -226,6 +226,20 @@ let build = gulp.series(
   ),
   fontsStyle,
 );
+
+let build2 = gulp.series(
+  clean,
+  gulp.parallel(
+    handleHTML,
+    handleCSS,
+    handleSCSS,
+    handleJS,
+    handleImages,
+    handleIcons,
+    handleFonts,
+  ),
+);
+
 const watch = gulp.parallel(build, svgSprite, watchFiles, bsControl);
 
 exports.fontsStyle = fontsStyle;
@@ -237,5 +251,6 @@ exports.handleSCSS = handleSCSS;
 exports.handleCSS = handleCSS;
 exports.handleHTML = handleHTML;
 exports.build = build;
+exports.build2 = build2;
 exports.watch = watch;
 exports.default = watch;
