@@ -51,6 +51,7 @@ const path = {
     js: sourceFolder + "/js/**/*.js",
     img: sourceFolder + "/assets/images/**/*.{jpg,png,gif,ico,webp,svg}",
     icons: sourceFolder + "/assets/icons/**/*.svg",
+    partials: sourceFolder + "/partials/",
   },
   clean: "./" + projectFolder + "/",
 };
@@ -76,12 +77,18 @@ function watchFiles() {
   gulp.watch([path.watch.css], handleCSS);
   gulp.watch([path.watch.js], handleJS);
   gulp.watch([path.watch.img], handleImages);
-  //icons
+  gulp.watch([path.watch.icons], handleIcons);
+  gulp.watch([path.watch.partials], handleSCSS);
 }
 
 function handleHTML() {
+  console.log(sourceFolder);
   return src(path.src.html)
-    .pipe(fileInclude())
+    .pipe(
+      fileInclude({
+        basepath: "./" + sourceFolder + "/",
+      }),
+    )
     .pipe(webpHTML())
     .pipe(dest(path.build.html))
     .pipe(browserSync.stream());
@@ -152,6 +159,10 @@ function handleImages() {
     .pipe(browserSync.stream());
 }
 
+function handleIcons() {
+  return src(path.src.icons).pipe(dest(path.build.icons));
+}
+
 function handleFonts() {
   src(path.src.fonts).pipe(ttf2woff()).pipe(dest(path.build.fonts));
   return src(path.src.fonts).pipe(ttf2woff2()).pipe(dest(path.build.fonts));
@@ -210,6 +221,7 @@ let build = gulp.series(
     handleSCSS,
     handleJS,
     handleImages,
+    handleIcons,
     handleFonts,
   ),
   fontsStyle,
@@ -219,6 +231,7 @@ const watch = gulp.parallel(build, svgSprite, watchFiles, bsControl);
 exports.fontsStyle = fontsStyle;
 exports.handleFonts = handleFonts;
 exports.handleImages = handleImages;
+exports.handleIcons = handleIcons;
 exports.handleJS = handleJS;
 exports.handleSCSS = handleSCSS;
 exports.handleCSS = handleCSS;
