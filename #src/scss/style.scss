@@ -2,5 +2,14 @@
 @import "./base/mixins.scss";
 @import "./base/fonts.scss";
 @import "./base/base.scss";
+//components
+@import "../partials/components/button/button";
+@import "../partials/components/socials/socials";
+@import "../partials/components/gallery/gallery";
+@import "../partials/components/range/range";
 
+//blocks
 @import "../partials/header/header";
+@import "../partials/watch/watch";
+@import "../partials/howitworks/howitworks";
+@import "../partials/inspire/inspire";
