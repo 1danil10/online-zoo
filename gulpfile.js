@@ -168,7 +168,7 @@ function handleFonts() {
   return src(path.src.fonts).pipe(ttf2woff2()).pipe(dest(path.build.fonts));
 }
 
-function fontsStyle(params) {
+async function fontsStyle(params) {
   let file_content = fs.readFileSync(sourceFolder + "/scss/base/fonts.scss");
   if (file_content == "") {
     fs.writeFile(sourceFolder + "/scss/base/fonts.scss", "", cb);
@@ -198,7 +198,7 @@ function fontsStyle(params) {
 
 function cb() {}
 
-gulp.task("svgSprite", function () {
+gulp.task("svgSprite", async function () {
   return src(path.src.icons)
     .pipe(
       svgSprite({

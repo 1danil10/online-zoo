@@ -1,0 +1,39 @@
+.page__inspire {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--color-hover-anti);
+}
+
+.inspire {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(100% / 3 - 20px);
+    align-items: center;
+    gap: 12.5px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__img {
+    height: 80px;
+    width: 80px;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  &__description {
+  }
+}

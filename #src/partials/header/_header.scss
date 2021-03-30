@@ -14,7 +14,7 @@
 .nav {
   margin: 0 auto;
   &__list {
-    padding-top: 4px;
+    padding-top: 8px;
     display: flex;
     padding-left: 1px;
     padding-right: 1px;
@@ -25,10 +25,23 @@
   }
 
   &__item {
+    position: relative;
+    &--active {
+      &::before {
+        display: block;
+        position: absolute;
+        content: "";
+        bottom: 6px;
+        width: 100%;
+        height: 1px;
+        background-color: var(--color-text);
+      }
+    }
   }
 
   &__link {
     display: block;
+    position: relative;
     font-weight: 500;
     font-size: 16px;
     line-height: 19 / 16 * 100%;
@@ -46,6 +59,10 @@
 
     &:active {
       filter: opacity(30%);
+    }
+
+    .nav__item--active & {
+      font-weight: 900;
     }
   }
 }
