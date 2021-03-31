@@ -1,7 +1,7 @@
 .gallery {
   //text-align: center;
   &__range {
-    margin: 0 auto 28px;
+    margin: 0 auto 26px;
 
     & .custom-range__input::-webkit-slider-thumb {
       -webkit-appearance: none;
@@ -10,8 +10,9 @@
     }
   }
 
-  &__button {
-    margin: auto;
+
+  &__button-wrapper {
+   text-align: center;
   }
 }
 
