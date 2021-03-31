@@ -1,0 +1,35 @@
+<div class="gallery @@class">
+  <div class="gallery__slider slider">
+    <button class="slider__button slider__button--prev">@@include("./assets/icons/arrow_left.svg")</button>
+
+    <div class="slider__container">
+
+      @@include('./partials/components/petCard/_card.html', {     filename:
+      "Rectangle14.jpg", alt: "panda", text: "Panda’s name is   Bei    Bei. He is 2 years old. Bei Bei is from China. He  loves    bamboos." })
+
+      @@include('./partials/components/petCard/_card.html', {     filename:
+      "Rectangle18.jpg", alt: "eagle", text: " Lorem ipsum  dolor   sit amet consectetur adipisicing elit. Illum   corporis tempora  est consequuntur iusto voluptatum   similique eius possimus   ipsam animi." })
+
+      @@include('./partials/components/petCard/_card.html', {     filename:
+      "Rectangle16.jpg", alt: "monkey", text: " Lorem ipsum   dolor    sit amet consectetur adipisicing elit. Illum   corporis tempora    est." })
+
+      @@include('./partials/components/petCard/_card.html', {     filename:
+      "Rectangle17.jpg", alt: "croc", text: " Lorem ipsum dolor   sit    amet" })
+
+   </div>
+
+    <button class="slider__button slider__button--next">@@include("./assets/icons/arrow_right.svg")</button>
+
+
+</div>
+
+   @@include('./partials/components/range/_range.html', {
+        class: 'gallery__range',
+        quantity: '08',
+        max: 8
+      })
+
+  @@include("./partials/components/button/_button.html", { class:
+      "gallery__button", href: "#", text:
+      "Choose your favorite", })
+</div>

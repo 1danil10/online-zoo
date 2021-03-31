@@ -83,17 +83,15 @@ function watchFiles() {
 
 function handleHTML() {
   console.log(sourceFolder);
-  return (
-    src(path.src.html)
-      .pipe(
-        fileInclude({
-          basepath: "./" + sourceFolder + "/",
-        }),
-      )
-      //.pipe(webpHTML())
-      .pipe(dest(path.build.html))
-      .pipe(browserSync.stream())
-  );
+  return src(path.src.html)
+    .pipe(
+      fileInclude({
+        basepath: "./" + sourceFolder + "/",
+      }),
+    )
+    .pipe(webpHTML())
+    .pipe(dest(path.build.html))
+    .pipe(browserSync.stream());
 }
 
 function handleCSS() {
