@@ -1,0 +1,10 @@
+.page__testimonials {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--color-bg);
+}
+.testimonials {
+  &__title {
+    margin-bottom: 50px;
+  }
+}

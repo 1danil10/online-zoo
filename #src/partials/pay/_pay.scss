@@ -32,6 +32,9 @@
     margin: 0;
     list-style: none;
   }
+  &__arrpw{
+    flex-shrink: 1;
+  }
 
   &__item {
     display: flex;
