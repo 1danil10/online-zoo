@@ -10,6 +10,10 @@
   }
 }
 
+@mixin thumbWidth($width, $quontity) {
+  width: $width / $quontity * 1px;
+}
+
 
 @function decimal-round ($number, $digits: 0, $mode: round) {
     $n: 1;
