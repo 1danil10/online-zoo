@@ -1,0 +1,36 @@
+.swiper {
+  display: flex;
+  max-width: 1618px;
+
+  &__container-outer {
+    overflow: hidden;
+  }
+  &__container {
+    // max-width: 1200px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: center;
+  
+    @media screen and (max-width:1919px) {
+      gap: 20px;
+    }
+    @media screen and (max-width:321px) {
+      gap: 16px;
+    }
+    //transform: translateX(-100%);
+  }
+  &__item {
+    max-width: 278px;
+  }
+
+  &__button {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    @media screen and (max-width: 601px) {
+      display: none;
+    }
+  }
+}

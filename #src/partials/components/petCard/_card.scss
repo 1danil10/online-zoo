@@ -23,7 +23,7 @@
       #000000 -56.45%,
       rgba(0, 0, 0, 0) 65.03%
     );
-    z-index: 2;
+    z-index: 1;
     transition: 0.3s;
     opacity: 0;
     pointer-events: none;
@@ -46,6 +46,7 @@
   &__img {
     position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
   }
