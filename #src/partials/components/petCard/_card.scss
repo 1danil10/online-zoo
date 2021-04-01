@@ -9,6 +9,7 @@
   justify-content: flex-end;
   transition: 0.4s ease-out;
   overflow: hidden;
+  box-sizing: border-box;
 
   &:before {
     content: "";
@@ -30,30 +31,27 @@
   }
   &:hover:before {
     opacity: 1;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      3 357.17deg,
-      #000000 -56.45%,
-      rgba(0, 0, 0, 0) 65.03%
-    );
   }
   &:hover &__info {
-    bottom: 0;
+    //bottom: 0;
+    transform: translateY(0);
   }
 
   &__img {
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
 
   &__info {
-    position: relative;
-    bottom: -100%;
+    //position: relative;
+    //bottom: -100%;
+    transform: translateY(100%);
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 39px;

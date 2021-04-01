@@ -50,7 +50,6 @@
     cursor: pointer;
     background-color: transparent;
     border: none;
-    outline: 1px solid var(--color-text);
     transition: all 0.3s ease;
 
     & svg {
@@ -65,6 +64,9 @@
       fill: #828282;
     }
 
+    &:focus-within{
+      outline: 1px solid #4bd8b5;
+    }
     &:not(.disabled):hover svg,
     &:not(.disabled):focus-within svg {
       transform: scale(1.2);
@@ -76,11 +78,11 @@
 
     &:not(.disabled):hover svg path,
     &:not(.disabled):focus-within svg path {
-      fill: var(--color-hover-anti);
+      fill: #4bd8b5;
     }
     &:not(.disabled):active svg path,
     &:not(.disabled):active svg path {
-      fill: var(--color-bg);
+      fill: var(--color-text);
     }
 
     &--to-left {
