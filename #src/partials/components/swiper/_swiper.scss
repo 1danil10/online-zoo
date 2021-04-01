@@ -1,35 +1,96 @@
 .swiper {
   display: flex;
-  max-width: 1618px;
+  gap: 5px;
 
   &__container-outer {
     overflow: hidden;
   }
   &__container {
-    // max-width: 1200px;
     display: flex;
     flex-wrap: nowrap;
     gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
     justify-content: flex-start;
     align-items: center;
-  
-    @media screen and (max-width:1919px) {
+    //transform: translateX(-278px - 30px - 278px - 30px);
+
+    @media screen and (max-width: 1921px) {
       gap: 20px;
     }
-    @media screen and (max-width:321px) {
+
+    @media screen and (max-width: 1201px) {
+      max-width: 900px;
+    }
+
+    @media screen and (max-width: 641px) {
+      max-width: 600px;
+    }
+
+    @media screen and (max-width: 321px) {
       gap: 16px;
     }
-    //transform: translateX(-100%);
   }
   &__item {
     max-width: 278px;
+
+    @media screen and (max-width: 1201px) {
+      width: 210px;
+    }
   }
 
   &__button {
+    display: block;
     flex-grow: 1;
     flex-shrink: 1;
+    padding: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: 1px solid var(--color-text);
+    transition: all 0.3s ease;
 
-    @media screen and (max-width: 601px) {
+    & svg {
+      transition: all 0.3s ease;
+    }
+
+    & svg path {
+      fill: var(--color-text);
+      transition: all 0.3s ease;
+    }
+    &.disabled svg path {
+      fill: #828282;
+    }
+
+    &:not(.disabled):hover svg,
+    &:not(.disabled):focus-within svg {
+      transform: scale(1.2);
+    }
+    &:not(.disabled):active svg,
+    &:not(.disabled):active svg {
+      fill: var(--color-bg);
+    }
+
+    &:not(.disabled):hover svg path,
+    &:not(.disabled):focus-within svg path {
+      fill: var(--color-hover-anti);
+    }
+    &:not(.disabled):active svg path,
+    &:not(.disabled):active svg path {
+      fill: var(--color-bg);
+    }
+
+    &--to-left {
+      text-align: right;
+    }
+
+    &--to-right {
+      text-align: left;
+    }
+    @media screen and (max-width: 641px) {
       display: none;
     }
   }
