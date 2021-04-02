@@ -15,8 +15,28 @@
     "text": " Lorem ipsum   dolor    sit amet consectetur adipisicing elit. Illum   corporis tempora    est."
   },
   {
-    "filename": "Rectangle12.jpg",
+    "filename": "Rectangle17.jpg",
     "alt": "croc",
     "text": " Lorem ipsum dolor   sit    amet"
+  },
+  {
+    "filename": "Rectangle19.jpg",
+    "alt": "fox",
+    "text": "Lorem ipsum dolor   sit"
+  },
+  {
+    "filename": "Rectangle20.jpg",
+    "alt": "sloth",
+    "text": " Lorsam animi."
+  },
+  {
+    "filename": "Rectangle21.jpg",
+    "alt": "elephant",
+    "text": " Lorem  adipisicing elit. Illum   corporis tempora    est."
+  },
+  {
+    "filename": "Rectangle22.jpg",
+    "alt": "leopard",
+    "text": "Lorem ipsum dolor si amet"
   }
 ]

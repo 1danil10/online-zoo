@@ -2,27 +2,9 @@
   <div class="container container--wide">
     <h2 class="testimonials__title title-text">Testimonials</h2>
 
-    <!-- @@include("./partials/components/swiper/_swiper.html") -->
-<!-- <div class="swiper">
-  <button class="swiper__button swiper__button--to-left">
-    @@include("./assets/icons/arrow_left.svg")
-  </button>
-  <div class="swiper__container-outer">
+    @@include("./partials/components/swiper/_swiper.html", {pathtoJSON: "./partials/testimonials/testimonials.json", el: "testimonial"})
 
-    <ul class="swiper__container">
-
-        @@include('./partials/components/testimon/_testimon.html', {     filename:
-      "nastya.png", name: "Nastya Sidorova", description: "As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat." })
-
-     </ul>
-  </div>
-  <button class="swiper__button swiper__button--to-right">
-    @@include("./assets/icons/arrow_right.svg")
-  </button>
-</div> -->
-
-@@include("./partials/components/swiper/_swiper.html", {pathtoJSON: "./partials/testimonials/testimonials.json", el: "testimonial"})
-
+    
     </div>
   </div>
 </section>

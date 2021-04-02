@@ -19,28 +19,28 @@
     align-items: center;
     //transform: translateX(-278px - 30px - 278px - 30px);
 
-    @media screen and (max-width: 1921px) {
-      gap: 20px;
-    }
+  //   @media screen and (max-width: 1921px) {
+  //     gap: 20px;
+  //   }
 
-    @media screen and (max-width: 1201px) {
-      max-width: 900px;
-    }
+  //   @media screen and (max-width: 1201px) {
+  //     max-width: 900px;
+  //   }
 
-    @media screen and (max-width: 641px) {
-      max-width: 600px;
-    }
+  //   @media screen and (max-width: 641px) {
+  //     max-width: 600px;
+  //   }
 
-    @media screen and (max-width: 321px) {
-      gap: 16px;
-    }
-  }
-  &__item {
-    max-width: 278px;
+  //   @media screen and (max-width: 321px) {
+  //     gap: 16px;
+  //   }
+  // }
+  // &__item {
+  //   max-width: 278px;
 
-    @media screen and (max-width: 1201px) {
-      width: 210px;
-    }
+  //   @media screen and (max-width: 1201px) {
+  //     width: 210px;
+  //   }
   }
 
   &__button {
