@@ -13,9 +13,16 @@
   }
 
   &__link {
-    & path {
-      fill: var(--color-text);
+    display: block;
+
+    & svg{
+    filter: drop-shadow( 0px 0px .1px var(--color-bg));
     }
+
+    & path {
+      fill: var(--fill-socials);
+
+}
 
     &:hover,
     &:focus-visible {

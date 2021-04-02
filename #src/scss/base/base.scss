@@ -20,7 +20,9 @@ html {
 }
 
 .page {
-  --color-text-default: #ffffff;
+  --color-base: #fefefe;
+  --color-text-button: #ffffff;
+
   background-color: var(--color-bg);
   margin: 0;
   padding: 0;
@@ -34,29 +36,26 @@ html {
 }
 
 .light {
+  --color-header-bg: #fff;
+  --color-switch-dot: #fff;
+  --color-switch-body: #f2f2f2;
   --color-text: #333333;
   --color-bg: #fbfbfb;
-  --color-base: #fefefe;
-  --color-base-anti: #828282;
+  --color-bg-zoos: #fbfbfb;
   --color-hover: #4f4f4f;
-  --color-hover-anti: #f2f2f2;
-  //--color-hover: #1b1b1b;
-  --color3: #3c3c3c;
-  // not in use --color-gray3: #3c3c3c;
-
-  // --color-gray1: #333333;
-  // --color-gray1: #fefefe; base
-  // --color--gray2: #4F4F4F;
-  // --color-gray2: #F2F2F2;
-}
+  --color-hover-reverse: #f2f2f2;
+  --fill-socials: #3c3c3c;
+  }
 .dark {
+  --color-header-bg: #333;
+  --color-switch-dot: #1b1b1b;
+  --color-switch-body: #4f4f4f;
   --color-text: #fefefe;
-  --color-base: #fefefe;
   --color-bg: #333333;
+  --color-bg-zoos: #4f4f4f;
   --color-hover: #f2f2f2;
-  --color-hover-anti: #4f4f4f;
-  --color-base: #828282;
-  --color-base-anti: #fefefe;
+  --color-hover-reverse: #4f4f4f;
+  --fill-socials: #fefefe;
 }
 
 .container {
