@@ -20,16 +20,12 @@
 
   &__slogan {
     max-width: 793px;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 42px;
+    text-align: left;
     font-weight: 900;
     font-size: 89px;
     line-height: 104 / 89 * 100%;
-    color: var(--color-base);
+    //color: var(--color-base);
+    color: #fefefe;
+    margin-bottom: 42px;
   }
 }
-
-// font-family: Roboto;
-// font-style: normal;
-//
