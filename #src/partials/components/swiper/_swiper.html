@@ -1,56 +1,15 @@
-<!-- <div class="swiper">
-  <button class="swiper__button swiper__button--to-left">
-    @@include("./assets/icons/arrow_left.svg")
-  </button>
-  <div class="swiper__container-outer">
-
-    <ul class="swiper__container">
-      <li class="swiper__item">
-        @@include('./partials/components/petCard/_card.html', {     filename:
-      "Rectangle14.jpg", alt: "panda", text: "Panda’s name is   Bei    Bei. He is 2 years old. Bei Bei is from China. He  loves    bamboos." })
-      </li>
-      <li class="swiper__item">
-        @@include('./partials/components/petCard/_card.html', {     filename:
-      "Rectangle18.jpg", alt: "eagle", text: " Lorem ipsum  dolor   sit amet consectetur adipisicing elit. Illum   corporis tempora  est consequuntur iusto voluptatum   similique eius possimus   ipsam animi." })
-      </li>
-      <li class="swiper__item">
-        @@include('./partials/components/petCard/_card.html', {     filename:
-      "Rectangle11.jpg", alt: "monkey", text: " Lorem ipsum   dolor    sit amet consectetur adipisicing elit. Illum   corporis tempora    est." })
-      <li class="swiper__item">
-        @@include('./partials/components/petCard/_card.html', {     filename:
-      "Rectangle12.jpg", alt: "croc", text: " Lorem ipsum dolor   sit    amet" })
-      </li>
-    </ul>
-  </div>
-  <button class="swiper__button swiper__button--to-right">
-    @@include("./assets/icons/arrow_right.svg")
-  </button>
-</div> -->
-
-
 <div class="swiper">
   <button class="swiper__button swiper__button--to-left">
     @@include("./assets/icons/arrow_left.svg")
   </button>
   <div class="swiper__container-outer">
-
     <ul class="swiper__container">
-      @@loop('./partials/components/swiper/_sw-item.html', "@@path")
-      <!-- <li class="swiper__item">
-        @@include('./partials/components/petCard/_card.html', {     filename:
-      "Rectangle14.jpg", alt: "panda", text: "Panda’s name is   Bei    Bei. He is 2 years old. Bei Bei is from China. He  loves    bamboos." })
-      </li>
-      <li class="swiper__item">
-        @@include('./partials/components/petCard/_card.html', {     filename:
-      "Rectangle18.jpg", alt: "eagle", text: " Lorem ipsum  dolor   sit amet consectetur adipisicing elit. Illum   corporis tempora  est consequuntur iusto voluptatum   similique eius possimus   ipsam animi." })
-      </li>
-      <li class="swiper__item">
-        @@include('./partials/components/petCard/_card.html', {     filename:
-      "Rectangle11.jpg", alt: "monkey", text: " Lorem ipsum   dolor    sit amet consectetur adipisicing elit. Illum   corporis tempora    est." })
-      <li class="swiper__item">
-        @@include('./partials/components/petCard/_card.html', {     filename:
-      "Rectangle12.jpg", alt: "croc", text: " Lorem ipsum dolor   sit    amet" })
-      </li> -->
+      @@if (el === "pet"){
+        @@loop('./partials/components/swiper/_item-pet.html',
+      "@@pathtoJSON")}
+      @@if (el === "testimonial"){
+        @@loop('./partials/components/swiper/_item-testimon.html',
+      "@@pathtoJSON")}
     </ul>
   </div>
   <button class="swiper__button swiper__button--to-right">

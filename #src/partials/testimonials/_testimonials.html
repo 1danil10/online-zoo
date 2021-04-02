@@ -3,7 +3,7 @@
     <h2 class="testimonials__title title-text">Testimonials</h2>
 
     <!-- @@include("./partials/components/swiper/_swiper.html") -->
-<div class="swiper">
+<!-- <div class="swiper">
   <button class="swiper__button swiper__button--to-left">
     @@include("./assets/icons/arrow_left.svg")
   </button>
@@ -19,9 +19,9 @@
   <button class="swiper__button swiper__button--to-right">
     @@include("./assets/icons/arrow_right.svg")
   </button>
-</div>
+</div> -->
 
-
+@@include("./partials/components/swiper/_swiper.html", {pathtoJSON: "./partials/testimonials/testimonials.json", el: "testimonial"})
 
     </div>
   </div>
