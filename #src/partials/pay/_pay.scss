@@ -1,0 +1,60 @@
+.page_pay {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--color-hover-anti);
+}
+
+.pay {
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__description {
+    text-align: center;
+    margin-bottom: 90px;
+  }
+
+  &__button{
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+.donate {
+  margin-bottom: 60px;
+
+  &__list {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    padding-top: 2px;
+    margin: 0;
+    list-style: none;
+  }
+  &__arrpw{
+    flex-shrink: 1;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 245px;
+    height: 245px;
+    border: 3px solid #4bd8b5;
+    border-radius: 50%;
+    padding: 55px;
+    padding-top: 80px;
+    box-sizing: border-box;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: var(--color-hover);
+  }
+}

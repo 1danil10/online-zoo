@@ -1,9 +1,14 @@
-<div class="page__pets">
+<div class="page__pets pets">
   <div class="container container--wide">
-    <h3 class="pets__title title-text"> Pets in Zoo</h3>
+    <h3 class="pets__title title-text">Pets in Zoo</h3>
+    @@include("./partials/components/swiper/_swiper.html", {pathtoJSON: "./partials/pets/pets.json", el: "pet" })
 
-    @@include('./partials/components/gallery/_gallery.html', {class: "pets__gallery"
-    })
+    @@include("./partials/components/button/_button.html", {class:"pets__button" ,text: "Choose your favourite", href:"asdad"})
 
-  </div>
+
+    @@include('./partials/components/range/_range.html', {
+        quantity: '08',
+        max: 8
+      })
+
 </div>

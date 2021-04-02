@@ -1,0 +1,43 @@
+<section class="page_pay pay">
+  <div class="container">
+    <h2 class="pay__title title-text">Pay and feed</h2>
+    <p class="description-text pay__description">
+      The opportunity to easily and naturally (but as often as possible) donate
+      to the needs of animals that you like.
+    </p>
+    <div class="pay__donate donate">
+      <ol class="donate__list">
+        <li class="donate__item">
+          <div class="donate__img">@@include("./assets/icons/pay/visa.svg")</div>
+          <h3 class="donate__title">You pay with a
+VISA card</h3>
+        </li>
+
+        <li class="donate__arrow">
+            @@include("./assets/icons/pay/Arrow.svg")
+         </li>
+
+        <li class="donate__item">
+          <div class="donate__img">@@include("./assets/icons/pay/zoo.svg")</div>
+          <h3 class="donate__title">Payment goes
+to the Zoo</h3>
+        </li>
+
+
+        <li class="donate__arrow">
+            @@include("./assets/icons/pay/Arrow.svg")
+        </li>
+
+        <li class="donate__item">
+          <div class="donate__img">@@include("./assets/icons/pay/panda.svg")</div>
+          <h3 class="donate__title">Panda gets
+the bamboo</h3>
+          </li>
+      </ol>
+
+
+    </div>
+      @@include("./partials/components/button/_button.html", { class: "pay__button", href:
+      "#", text: "Donate", })
+  </div>
+</section>
