@@ -5,9 +5,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 206px;
-  padding-bottom: 113px;
-  height: 100%;
-  height: 620px;
+  padding-bottom: 100px;
+  min-height: 620px;
+  overflow: hidden;
 }
 
 .watch {
@@ -23,9 +23,103 @@
     text-align: left;
     font-weight: 900;
     font-size: 89px;
-    line-height: 104 / 89 * 100%;
-    //color: var(--color-base);
+    line-height: calc(104 / 89);
     color: #fefefe;
-    margin-bottom: 42px;
+    margin-bottom: 8px;
+  }
+}
+
+.online-range {
+  &__input::-webkit-slider-thumb {
+    @include thumbWidth(245, 8);
+  }
+}
+
+.online {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 9px;
+
+  &__button {
+    margin: 0;
+  }
+
+  &__slider-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  &__button-wrapper {
+    padding-top: 31px;
+    min-width: 50%;
+  }
+  &__range-wrapper {
+    max-width: 680px;
+  }
+}
+
+.online-swiper {
+  &__button {
+    display: none;
+  }
+
+  &__container-outer {
+    overflow: visible;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 7px;
+    position: relative;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 50.2%;
+      transform: translateY(50%);
+      transform: translate(0, -50%);
+      left: clamp(-120px, -7vw, -10px);
+      right: auto;
+      border: solid 1px var(--color-base);
+      padding: 3px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--color-base) content-box;
+    }
+    &::after {
+      left: auto;
+      right: clamp(-120px, -7vw, -10px);
+    }
+  }
+
+  &__container {
+    gap: 50px;
+    height: 352px;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      left: clamp(-125px, -7vw, -15px);
+      right: clamp(-125px, -7vw, -15px);
+      background-color: var(--color-base);
+    }
+  }
+
+  .swiper__item {
+    width: 140px;
+    height: 203px;
+
+    &:hover,
+    .swiper__item.active {
+      width: 245px !important;
+      height: 352px;
+      transform: translateY(-15px);
+    }
   }
 }

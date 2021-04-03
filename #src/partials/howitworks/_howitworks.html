@@ -5,12 +5,13 @@
 
       </p>
 
-      @@include("./partials/components/swiper/_swiper.html", {class:'how', pathtoJSON: "./partials/howitworks/howitworks.json", el: "howitworks"})
+      @@include("./partials/components/swiper/_swiper.html", {class:'how-swiper', pathtoJSON: "./partials/howitworks/howitworks.json", el: "howitworks"})
 
       @@include('./partials/components/range/_range.html', {
         class: 'how-range',
         quantity: '04',
-        max: 4
+        max: 4,
+        value:"01",
       })
 
       @@include("./partials/components/button/_button.html", { class: "how__button", href:

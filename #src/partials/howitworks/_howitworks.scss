@@ -12,24 +12,20 @@
     margin-bottom: 30px;
   }
 
-  &__img-wrapper {
-    overflow: hidden;
-    margin-bottom: 32px;
-  }
-
-  &__img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0;
-  }
-  &__range {
-    margin: 0 auto;
-    margin-bottom: 27px;
+  &-range {
+    margin-bottom: 28px;
   }
 
   &__button {
     display: flex;
     margin: 0 auto;
+  }
+}
+
+
+.how-swiper {
+  margin-bottom: 28px;
+  &__button {
+    display: none;
   }
 }

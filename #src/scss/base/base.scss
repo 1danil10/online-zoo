@@ -1,3 +1,9 @@
+* {
+  transition: color .5s linear, background-color .5s linear;
+}
+
+
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -32,7 +38,7 @@ html {
   font-weight: 400;
   color: var(--color-text);
   min-height: 100vh;
-  // height: 100vh;
+  transition: all .3s linear;
 }
 
 .light {
@@ -68,14 +74,15 @@ html {
   box-sizing: border-box;
   outline: 1px solid black;
 
+
   &--narrow {
     max-width: 810px;
   }
 
   &--wide {
+   // overflow: hidden;
     @media screen and (min-width: 901px) {
       //max-width: 1618px;
-
       outline: 1px dashed red;
       max-width: 1638px;
     }

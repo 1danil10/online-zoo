@@ -1,13 +1,14 @@
-<div class="swiper @@class-swiper">
-  <button class="swiper__button swiper__button--to-left">
+<div class="swiper @@class">
+
+  <button class="swiper__button swiper__button--to-left @@class__button @@class__button--to-left">
     @@include("./assets/icons/arrow_left.svg")
   </button>
-  <div class="swiper__container-outer">
-    <ul class="swiper__container">
+  <div class="swiper__container-outer @@class__container-outer">
+    <ul class="swiper__container @@class__container">
+
       @@if (el === "pet"){
         @@loop('./partials/components/swiper/_item-pet.html',
       "@@pathtoJSON")}
-
       @@if (el === "testimonial"){
         @@loop('./partials/components/swiper/_item-testimon.html',
       "@@pathtoJSON")}
@@ -17,7 +18,7 @@
       "@@pathtoJSON")}
     </ul>
   </div>
-  <button class="swiper__button swiper__button--to-right">
+  <button class="swiper__button swiper__button--to-right @@class__button @@class__button--to-right">
     @@include("./assets/icons/arrow_right.svg")
   </button>
 </div>
