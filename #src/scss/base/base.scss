@@ -1,7 +1,6 @@
 * {
-  transition: color .5s linear, background-color .5s linear;
+  transition: color 0.5s linear, background-color 0.5s linear;
 }
-
 
 *,
 *::before,
@@ -38,7 +37,7 @@ html {
   font-weight: 400;
   color: var(--color-text);
   min-height: 100vh;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 }
 
 .light {
@@ -47,17 +46,19 @@ html {
   --color-switch-body: #f2f2f2;
   --color-text: #333333;
   --color-bg: #fbfbfb;
+  --color-bg-testimonials: #fefefe;
   --color-bg-zoos: #fbfbfb;
   --color-hover: #4f4f4f;
   --color-hover-reverse: #f2f2f2;
   --fill-socials: #3c3c3c;
-  }
+}
 .dark {
   --color-header-bg: #333;
   --color-switch-dot: #1b1b1b;
   --color-switch-body: #4f4f4f;
   --color-text: #fefefe;
   --color-bg: #333333;
+  --color-bg-testimonials: #3b3b3b;
   --color-bg-zoos: #4f4f4f;
   --color-hover: #f2f2f2;
   --color-hover-reverse: #4f4f4f;
@@ -74,13 +75,12 @@ html {
   box-sizing: border-box;
   outline: 1px solid black;
 
-
   &--narrow {
     max-width: 810px;
   }
 
   &--wide {
-   // overflow: hidden;
+    // overflow: hidden;
     @media screen and (min-width: 901px) {
       //max-width: 1618px;
       outline: 1px dashed red;
@@ -95,13 +95,13 @@ html {
   font-weight: 900;
   text-align: center;
   font-size: 48px;
-  line-height: 56px;
+  line-height: calc(56 / 48);
   color: var(--color-text);
 }
 
 .description-text {
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   color: var(--color-hover);
   padding: 0;
   margin: 0;

@@ -2,7 +2,16 @@
   <div class="container container--wide">
     <h2 class="testimonials__title title-text">Testimonials</h2>
 
-    @@include("./partials/components/swiper/_swiper.html", {pathtoJSON: "./partials/testimonials/testimonials.json", el: "testimonial"})
+    @@include("./partials/components/swiper/_swiper.html", {pathtoJSON: "./partials/testimonials/testimonials.json", el: "testimonial", class: "testimonials-swiper"})
+
+        @@include('./partials/components/range/_range.html', {
+        class: "testimonials-range",
+        quantity: '08',
+        max: 8,
+        value:"01"
+      })
+
+    @@include("./partials/components/button/_button.html", {class:"testimonials__button" ,text: "Leave feedback", href:"#"})
 
     </div>
   </div>

@@ -1,14 +1,14 @@
 .testimon {
-  width: 585px;
+  min-width: 585px;
   height: 310px;
-  background-color: #fefefe;
-  background-color: red;
-  //background-color: #3b3b3b; //dark
+  background-color: var(--color-bg);
+  box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.1);
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 50px;
+  padding-top: 45px;
   padding-bottom: 50px;
   padding-left: 73px;
   padding-right: 73px;
@@ -19,6 +19,7 @@
     width: 68px;
     height: 68px;
     border-radius: 50%;
+    border: 1px solid #BDBDBD;
   }
 
   &__title {

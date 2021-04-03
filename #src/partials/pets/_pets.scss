@@ -8,10 +8,30 @@
     margin-bottom: 37px;
   }
 
-  & .custom__range {
-    margin: 0 auto 26px;
+  &-range {
+    margin-bottom: 26px;
+
   }
-  & .custom-range__input::-webkit-slider-thumb {
+
+}
+
+.pets-swiper {
+  margin-bottom: 32px;
+
+  &__container-outer{
+     max-width: 1200px;
+  }
+
+  .swiper__item {
+    min-width:278px;
+    height: 399px;
+  }
+
+}
+
+
+.pets-range {
+  &__input::-webkit-slider-thumb {
     -webkit-appearance: none;
     height: 10px;
     @include thumbWidth(245, 8);

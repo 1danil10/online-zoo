@@ -8,3 +8,33 @@
     margin-bottom: 50px;
   }
 }
+
+.testimonials-swiper {
+  margin-bottom: 47px;
+
+  &__container-outer {
+    max-width: 1200px;
+  }
+
+  &__container {
+    gap: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+  }
+
+  .swiper-element {
+    flex-basis: 50%;
+  }
+}
+
+.testimonials-range{
+  margin-bottom: 26px;
+
+   &__input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 10px;
+    @include thumbWidth(245, 8);
+  }
+
+}
