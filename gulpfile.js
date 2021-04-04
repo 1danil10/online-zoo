@@ -19,8 +19,8 @@ const ttf2woff2 = require("gulp-ttf2woff2");
 
 const fs = require("fs");
 
-const projectFolder = "dist";
-//const projectFolder = require("path").basename(__dirname); name equal to directory project
+//const projectFolder = "dist";
+const projectFolder = require("path").basename(__dirname);// name equal to directory project
 const sourceFolder = "#src";
 
 const path = {
