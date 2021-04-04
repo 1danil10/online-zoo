@@ -32,6 +32,7 @@
 .online-range {
   &__input::-webkit-slider-thumb {
     @include thumbWidth(245, 8);
+    background: var(--color-base);
   }
 }
 
