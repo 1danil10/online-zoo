@@ -1,6 +1,6 @@
 .page__watch {
   background-color: #5d5b66;
-  background-image: url("/assets/images/landing/watch-bg.jpg");
+  background-image: url("../assets/images/landing/watch-bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,6 +33,9 @@
   &__input::-webkit-slider-thumb {
     @include thumbWidth(245, 8);
     background: var(--color-base);
+  }
+  &__num-current {
+    color: var(--color-base);
   }
 }
 
