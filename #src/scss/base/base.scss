@@ -1,7 +1,3 @@
-* {
-  transition: color 0.5s linear, background-color 0.5s linear;
-}
-
 *,
 *::before,
 *::after {
@@ -27,7 +23,8 @@ html {
 .page {
   --color-base: #fefefe;
   --color-text-button: #ffffff;
-
+  --color-pin: #49d6df;
+  --color-pin-hover: red;
   background-color: var(--color-bg);
   margin: 0;
   padding: 0;
@@ -105,4 +102,8 @@ html {
   color: var(--color-hover);
   padding: 0;
   margin: 0;
+}
+
+section {
+  transition: color 0.5s linear, background-color 0.5s linear;
 }

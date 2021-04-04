@@ -1,40 +1,63 @@
 [
   {
+    "name": "eagle",
+    "region": "lorem ipsum",
+    "population": "more than 200k pairs",
     "filename": "Rectangle18.jpg",
     "alt": "eagle",
     "text": " Lorem ipsum  dolor   sit amet consectetur adipisicing elit. Illum   corporis tempora  est consequuntur iusto voluptatum   similique eius possimus   ipsam animi."
   },
   {
+    "name": "panda",
+    "region": "lorem ipsum",
+    "population": "more than 200k pairs",
     "filename": "Rectangle14.jpg",
     "alt": "panda",
     "text": "Panda’s name is   Bei    Bei. He is 2 years old. Bei Bei is from China. He  loves    bamboos."
   },
   {
+    "name": "monkey",
+    "region": "lorem ipsum",
+    "population": "more than 200k pairs",
     "filename": "Rectangle11.jpg",
     "alt": "monkey",
     "text": " Lorem ipsum   dolor    sit amet consectetur adipisicing elit. Illum   corporis tempora    est."
   },
   {
+    "name": "croc",
+    "region": "lorem ipsum",
+    "population": "more than 200k pairs",
     "filename": "Rectangle17.jpg",
     "alt": "croc",
     "text": " Lorem ipsum dolor   sit    amet"
   },
-  {
+  { "name":"fox",
+    "region": "lorem ipsum",
+    "population": "more than 200k pairs",
     "filename": "Rectangle19.jpg",
     "alt": "fox",
     "text": "Lorem ipsum dolor   sit"
   },
   {
+    "name": "sloth",
+    "region": "lorem ipsum",
+    "population": "more than 200k pairs",
     "filename": "Rectangle20.jpg",
     "alt": "sloth",
     "text": " Lorsam animi."
   },
   {
+    "name": "elephant",
+    "region": "lorem ipsum",
+    "population": "more than 200k pairs",
     "filename": "Rectangle21.jpg",
     "alt": "elephant",
     "text": " Lorem  adipisicing elit. Illum   corporis tempora    est."
   },
   {
+    "name": "leopard",
+    "region": "lorem ipsum",
+    "population": "more than 200k pairs",
     "filename": "Rectangle22.jpg",
     "alt": "leopard",
     "text": "Lorem ipsum dolor si amet"

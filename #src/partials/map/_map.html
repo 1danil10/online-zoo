@@ -1,0 +1,12 @@
+<section class="page__map map">
+  <div class="container container--wide">
+    <h2 class="map__title title-text">Map</h2>
+    <div class="container map__container">
+      @@include('./assets/images/map/map.svg')
+
+      @@loop('./partials/map/_map-item.html', './partials/pets/pets.json')
+
+    </div>
+       @@include('./partials/components/button/_button.html', {class: "map__button", href:'./broadcast/broadcast.html',text: "@@include('./assets/icons/play_icon.svg') Watch online"})
+  </div>
+</section>

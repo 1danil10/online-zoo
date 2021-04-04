@@ -1,0 +1,18 @@
+<div class="map__icon icon map__icon--@@name">
+  <div class="icon__img-wrapper">
+    <img class="icon__img" width='22' height='22' src="./assets/images/gallery/@@filename" />
+  </div>
+</div>
+
+<div class="map__tooltip tooltip">
+    <div class="tooltip__img-wrapper">
+      <img class='tooltip__img' src="./assets/images/gallery/@@filename" width="65" height="65" />
+    </div>
+    <div class="tooltip__info-wrapper">
+      <span class="tooltip__title">@@name</span>
+      <p class="tooltip__info"><b>Region: </b>@@region</p>
+      <p class="tooltip__info"><b>population: </b>@@population</p>
+
+      @@include('./partials/components/button/_button.html', {class: "tooltip__button", href:'#',text: "@@include('./assets/icons/play_icon.svg') Watch online"})
+    </div>
+   </div>
