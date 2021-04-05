@@ -12,7 +12,6 @@
   }
   &__line {
     margin-bottom: 27px;
-
   }
   .container.container--wide {
     position: relative;
@@ -109,6 +108,15 @@
     &::placeholder {
       color: #e0e0e0;
     }
+
+    &-description {
+
+    }
+  }
+
+  &__input-personal-wrapper {
+
+    cursor: pointer;
   }
 
   &__fieldset {
@@ -130,7 +138,8 @@
     padding: 5px;
     color: #bdbdbd;
   }
-
+  &__input-personal-wrapper {
+  }
   &__input-personal {
     position: relative;
     margin-bottom: 2px;
@@ -143,8 +152,10 @@
       top: 0;
       background-color: #333333;
       border: 1px solid #bdbdbd;
+      cursor: pointer;
     }
     &:checked::after {
+      cursor: pointer;
       content: "\2713";
       position: absolute;
       top: -1px;

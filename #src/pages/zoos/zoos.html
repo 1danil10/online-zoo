@@ -9,10 +9,18 @@
     <link rel="stylesheet" href="@@webRoot/css/style.min.css" />
   </head>
   <body class="page light">
-
+    <h1 class="sr-only">Online Zoo</h1>
     @@include('./partials/header/_header.html', {class: 'zoos__header'})
 
-    @@loop('./partials/zoos/_zoos-item.html', './partials/pets/pets.json')
+    <div class="container broadcast__container">
+      <div class="broadcast__watch watch-broadcast">
+        <ul class="watch-broadcast__list ">
+          @@loop('./partials/zoos/_list-item.html', './partials/pets/pets.json')
+        </ul>
+      </div>
+
+      @@loop('./partials/zoos/_zoos-item.html', './partials/pets/pets.json')
+    </div>
 
     @@include('./partials/footer/_footer.html')
 
