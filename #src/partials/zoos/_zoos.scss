@@ -1,16 +1,18 @@
 .watch-broadcast {
   position: sticky;
+  align-self: flex-start;
   top: 15px;
   bottom: 15px;
   left: 15px;
-
   padding-left: 20px;
   padding-right: 20px;
   &__list {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
+    max-height: 400px;
   }
   &__item {
     display: flex;
@@ -62,9 +64,9 @@
   }
 
   &__container {
-    position: relative;
     max-width: 1940px;
     display: flex;
+    align-self: flex-start;
     justify-content: center;
   }
 

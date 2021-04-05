@@ -68,7 +68,6 @@ html {
 .container {
   width: 100%;
   margin: 0 auto;
-  //  max-width: 1200px;
   max-width: 1220px;
   padding-left: 10px;
   padding-right: 10px;
@@ -80,7 +79,6 @@ html {
 
   &--wide {
     @media screen and (min-width: 901px) {
-      //max-width: 1618px;
       max-width: 1638px;
     }
   }
