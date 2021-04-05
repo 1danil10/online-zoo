@@ -1,21 +1,35 @@
 [
   {
+    "url": "https://www.youtube.com/embed/RmmAzrAkKqI",
+    "population": "More than 270 pairs in 2013",
+    "habitat": "Typically nest in forested areas adjacent to large bodies of water",
+    "diet": "Main live prey consists of medium sized mammals and birds such as rabbits, hares, grouse and ptarmigan. The diet of coastal birds includes gulls and other seabirds.",
+    "title": "West End Bald Eagle Cam",
     "name": "eagle",
     "region": "lorem ipsum",
-    "population": "more than 200k pairs",
     "filename": "Rectangle18.jpg",
     "alt": "eagle",
     "text": " Lorem ipsum  dolor   sit amet consectetur adipisicing elit. Illum   corporis tempora  est consequuntur iusto voluptatum   similique eius possimus   ipsam animi."
   },
   {
+    "url": "https://www.youtube.com/embed/OObOQ2GElhA",
+    "population": "About 1,590 individuals",
+    "habitat": "Temperate forests high in the mountains of southwest China",
+    "diet": "A panda's daily diet consists almost entirely of the leaves, stems and shoots of various bamboo species. Bamboo contains very little nutritional value so pandas must eat 12-38kg every day to meet their energy needs.",
+    "title": "The Beijing Zoo",
     "name": "panda",
     "region": "lorem ipsum",
     "population": "more than 200k pairs",
     "filename": "Rectangle14.jpg",
     "alt": "panda",
-    "text": "Panda’s name is   Bei    Bei. He is 2 years old. Bei Bei is from China. He  loves    bamboos."
+    "text": "Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos."
   },
   {
+    "url": "https://www.youtube.com/embed/rgXWDk7rh4w",
+    "population": "Over 100,000 western lowland gorillas",
+    "habitat": "TGorillas primarily inhabit tropical forest habitats.Tropical forests are characterized as having little variance in temperature (around 23°C) and length of daylight (around 12 hours).",
+    "diet": "Gorillas stick to a mainly vegetarian diet, feeding on stems, bamboo shoots and fruits. Western lowland gorillas, however, also have an appetite for termites and ants, and break open termite nests to eat the larvae.",
+    "title": "GRACE Gorilla Forest Corridor Cam",
     "name": "monkey",
     "region": "lorem ipsum",
     "population": "more than 200k pairs",
@@ -24,6 +38,11 @@
     "text": " Lorem ipsum   dolor    sit amet consectetur adipisicing elit. Illum   corporis tempora    est."
   },
   {
+    "url": "https://www.youtube.com/embed/EnxRJii_dp8",
+    "population": "Roughly 1.25 million",
+    "habitat": "Alligators can be found in slow-moving rivers, ponds, lakes and swamps.",
+    "diet": "Their diets include prey species that are abundant and easily accessible. Juvenile alligators eat primarily insects, amphibians, small fish, and other invertebrates. Adult alligators eat rough fish, snakes, turtles, small mammals, and birds.",
+    "title": "Alligator and Spoonbill Swamp Webcam",
     "name": "croc",
     "region": "lorem ipsum",
     "population": "more than 200k pairs",
@@ -31,7 +50,13 @@
     "alt": "croc",
     "text": " Lorem ipsum dolor   sit    amet"
   },
-  { "name":"fox",
+  {
+    "url": "https://www.youtube.com/embed/8IUNF_ZWhdw",
+    "population": "The pre-breeding British fox population has been estimated at ~240,000 individuals (Harris et al. 1995). Mean number of foxes killed per unit area by gamekeepers has increased steadily since the early 1960s in Britain, but it is not clear to what extent this reflects an increase in fox abundance.",
+    "habitat": "Red foxes live around the world in many diverse habitats including forests, grasslands, mountains, and deserts. They also adapt well to human environments such as farms, suburban areas, and even large communities.",
+    "diet": "Foxes have a really diverse diet. They are expert hunters, catching rabbits, rodents, birds, frogs and earthworms as well as eating carrion. But they aren't carnivorous - they are actually omnivores as they dine on berries and fruit too.",
+    "title": "Foxheaven Dublin Ireland Livestream",
+    "name": "fox",
     "region": "lorem ipsum",
     "population": "more than 200k pairs",
     "filename": "Rectangle19.jpg",
@@ -39,6 +64,11 @@
     "text": "Lorem ipsum dolor   sit"
   },
   {
+    "url": "https://www.youtube.com/embed/Xe91bOZ_ZsU",
+    "population": "The actual population size is most likely somewhere between 500 to 1,500 individuals",
+    "habitat": "Sloths—the sluggish tree-dwellers of Central and South America—spend their lives in the tropical rain forests. They move through the canopy at a rate of about 40 yards per day, munching on leaves, twigs and buds. Sloths have an exceptionally low metabolic rate and spend 15 to 20 hours per day sleeping.",
+    "diet": "What do sloths eat? Sloths munch on leaves, twigs and buds. Because the animals don't have incisors, they trim down leaves by smacking their firm lips together. A low metabolic rate means sloths can survive on relatively little food; it takes days for them to process what other animals can digest in a matter of hours.",
+    "title": "LIVE at the ZOO: Two-Toed Sloths!",
     "name": "sloth",
     "region": "lorem ipsum",
     "population": "more than 200k pairs",
@@ -47,6 +77,11 @@
     "text": " Lorsam animi."
   },
   {
+    "url": "https://www.youtube.com/embed/ZGcBDLMBHjI",
+    "population": " Today, there are just 415,000 elephants across Africa.",
+    "habitat": "Elephants are grayish to brown in colour, and their body hair is sparse and coarse. They are found most often in savannas, grasslands, and forests but occupy a wide range of habitats, including deserts, swamps, and highlands in tropical and subtropical regions of Africa and Asia.",
+    "diet": "Elephants eat roots, grasses, fruit, and bark. An adult elephant can consume up to 300 pounds of food in a single day. These hungry animals do not sleep much, roaming great distances while foraging for the large quantities of food that they require to sustain their massive bodies.",
+    "title": "Elephant Cam Live",
     "name": "elephant",
     "region": "lorem ipsum",
     "population": "more than 200k pairs",
@@ -55,6 +90,11 @@
     "text": " Lorem  adipisicing elit. Illum   corporis tempora    est."
   },
   {
+    "url": "https://www.youtube.com/embed/4wb6o3QvrxY",
+    "population": "These numbers may sound drastically small — but the wild population has actually grown in the last three years. In 2017, 60 leopards were thought to be living in the wild — now, more than 84 are believed to be still out there.",
+    "habitat": "These large cats can live in almost any type of habitat, including rainforests, deserts, woodlands, grassland savannas, forests, mountain habitats, coastal scrubs, shrub lands and swampy areas. In fact, leopards live in more places than any other large cat.",
+    "diet": "Baboons, hares, rodents, birds, lizards, porcupines, warthogs, fish, and dung beetles are all part of the leopard's extensive menu. This eclectic diet has helped leopards survive in areas where other large cat populations have diminished. When food is scarce, leopards will hunt less desirable, but more abundant prey",
+    "title": "Snow Leopards Outdoor Cam",
     "name": "leopard",
     "region": "lorem ipsum",
     "population": "more than 200k pairs",
